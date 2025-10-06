@@ -1,0 +1,20 @@
+{
+  "name": "sap.icecream",
+  "version": "1.0.0",
+  "author": "SAP SE",
+"scripts": {
+    "start": "ui5 serve -o index.html",
+    "build": "ui5 build --all --clean-dest",
+    "serve-dist": "ws --compress -d dist --open"
+  },
+  "devDependencies": {
+    "@types/openui5": "^1.140.0",
+    "@ui5/cli": "^4.0.26",
+    "@ui5/ts-interface-generator": "^0.10.3",
+    "local-web-server": "^5.4.0",
+    "typescript": "^5.9.2",
+    "ui5-middleware-livereload": "^3.1.3",
+    "ui5-middleware-serveframework": "^3.6.2",
+    "ui5-tooling-transpile": "^3.9.1"
+  }
+}
