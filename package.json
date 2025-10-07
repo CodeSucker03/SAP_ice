@@ -2,12 +2,14 @@
   "name": "sap.icecream",
   "version": "1.0.0",
   "author": "SAP SE",
-"scripts": {
+  "scripts": {
     "start": "ui5 serve -o index.html",
     "build": "ui5 build --all --clean-dest",
     "serve-dist": "ws --compress -d dist --open"
   },
   "devDependencies": {
+    "@openui5/ts-types-esm": "^1.141.0",
+    "@sapui5/ts-types-esm": "^1.141.0",
     "@types/openui5": "^1.140.0",
     "@ui5/cli": "^4.0.26",
     "@ui5/ts-interface-generator": "^0.10.3",

@@ -1,0 +1,4 @@
+<mvc:View controllerName="sap.icecream.controller.Reviews"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m">
+</mvc:View>

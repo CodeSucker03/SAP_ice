@@ -3,6 +3,8 @@ import { IProcessFlowNode, IUserReview } from "./interface";
 import NumberFormat from "sap/ui/core/format/NumberFormat";
 import formatMessage from "sap/base/strings/formatMessage";
 import JSONModel from "sap/ui/model/json/JSONModel";
+import UIComponent from "sap/ui/core/UIComponent";
+import Router from "sap/ui/core/routing/Router";
 
 export default class Startpage extends Controller {
   public onInit(): void | undefined {
@@ -43,5 +45,20 @@ export default class Startpage extends Controller {
   public formatJSONDate(date: string): string {
     let oDate = new Date(Date.parse(date));
     return oDate.toLocaleDateString();
+  }
+  public onNavToProcessFlow(): void {
+    this.getRouter().navTo("processFlow");
+  }
+
+  public onNavToChartContainer(): void {
+    this.getRouter().navTo("chartContainer");
+  }
+
+  public onNavToReviews(): void {
+    this.getRouter().navTo("reviews");
+  }
+
+  public getRouter(): Router {
+    return (this.getOwnerComponent() as UIComponent).getRouter();
   }
 }

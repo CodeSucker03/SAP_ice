@@ -7,10 +7,12 @@ framework:
   version: "1.141.0"
   libraries:
     - name: sap.m
+    - name: sap.suite.ui.commons
     - name: sap.suite.ui.microchart
     - name: sap.ui.core
     - name: sap.ui.layout
     - name: themelib_sap_horizon
+    - name: sap.viz
 builder:
   customTasks:
   - name: ui5-tooling-transpile-task
