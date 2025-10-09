@@ -8,9 +8,9 @@
     "serve-dist": "ws --compress -d dist --open"
   },
   "devDependencies": {
+    "@openui5/ts-types": "^1.141.0",
     "@openui5/ts-types-esm": "^1.141.0",
     "@sapui5/ts-types-esm": "^1.141.0",
-    "@types/openui5": "^1.140.0",
     "@ui5/cli": "^4.0.26",
     "@ui5/ts-interface-generator": "^0.10.3",
     "local-web-server": "^5.4.0",

@@ -21,7 +21,7 @@ sap.ui.define([
 
 			let oDataset = new FlattenedDataset({
 				dimensions: new DimensionDefinition({
-					name: "Ice Cream",
+					name: "Ice Creamy",
 					value: "{id}"
 				}),
 				measures: [
@@ -58,7 +58,7 @@ sap.ui.define([
 			oVizFrame.addFeed(new FeedItem({
 				uid: "categoryAxis",
 				type: "Dimension",
-				values: [ "Ice Cream" ]
+				values: [ "Ice Creamy" ]
 			}));
 
 			oVizFrame.setVizProperties({

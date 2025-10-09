@@ -13,6 +13,7 @@
         "sap/icecream/*": ["webapp/*"]
       },
       "outDir": "dist",
+      "types": ["@sapui5/ts-types-esm"]
     },
     "include": ["webapp/**/*"],
 }
